@@ -27,9 +27,9 @@ const monsterEl = document.querySelector('#monster');
 
 // GIFs (Substituído imagens estáticas por GIFs)
 // Fonte dos GIFs: Gifs de domínio público ou comuns de jogos/pixel art
-const KNIGHT_GIF = "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExamI2NmYwdGxlM3Ixd3g3MTB4M3c3OHpkaWY0dGswYTRpbWprMTZ6dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pyhASXLDkUAh7pewAn/giphy.gif";
-const SORCERER_GIF = 'https://media1.tenor.com/m/ItpUeyDZk14AAAAd/king-nanatsu-no-tazai.gif';
-const MONSTER_GIF = 'https://media1.tenor.com/m/LQRptFnFoEQAAAAd/nanatsu-no-taizai-4koa.gif';
+const KNIGHT_GIF = "https://tse3.mm.bing.net/th/id/OIP.GN8-qoJDNjT31Lks7Qf2VAHaEu?rs=1&pid=ImgDetMain&o=7&rm=3";
+const SORCERER_GIF = 'https://wallpapercave.com/wp/wp5576039.jpg';
+const MONSTER_GIF = 'https://th.bing.com/th/id/R.e1b026f03efb6afb5e24be2f5bda8cef?rik=xCjQo4pebgiAwg&riu=http%3a%2f%2fpm1.narvii.com%2f6899%2fcce3c948c7bd85f5a2b27ef9d81336cc0ee84e70r1-422-473v2_uhq.jpg&ehk=0ENwNemYrR0YyuSblJJ4ZdpQZXKh2o2o6gTycwLKEHQ%3d&risl=&pid=ImgRaw&r=0';
 
 const charImgSrc = heroChoice === 'Knight' ? KNIGHT_GIF : SORCERER_GIF; 
 const monsterImgSrc = MONSTER_GIF; 
