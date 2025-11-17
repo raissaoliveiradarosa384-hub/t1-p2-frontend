@@ -5,7 +5,7 @@ let log = new Log(document.querySelector(".log"));
 // allow user to choose hero type (Knight or Sorcerer)
 const heroChoice = (function(){
 const c = prompt('Escolha seu herói: Meliodas ou King (digite exatamente Meliodas ou King)', 'Sorcerer');
-if(c && c.toLowerCase().startsWith('M')) return 'Knight';
+if(c && c.toLowerCase().startsWith('m')) return 'Knight';
 return 'Sorcerer';
 })();
 
