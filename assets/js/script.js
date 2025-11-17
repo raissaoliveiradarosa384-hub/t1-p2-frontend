@@ -27,9 +27,9 @@ const monsterEl = document.querySelector('#monster');
 
 // GIFs (Substituído imagens estáticas por GIFs)
 // Fonte dos GIFs: Gifs de domínio público ou comuns de jogos/pixel art
-const KNIGHT_GIF = "https://media.tenor.com/LDXPUUlSSj0AAAAM/seven-deadly-sins-meliodas.gif";
-const SORCERER_GIF = 'https://tenor.com/pt-BR/view/seven-deadly-sins-king-fairy-king-gif-20428465';
-const MONSTER_GIF = 'https://tenor.com/pt-BR/view/arthur-pendragon-arthurpendragon-7ds-gif-15325690588768066197';
+const KNIGHT_GIF = "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExamI2NmYwdGxlM3Ixd3g3MTB4M3c3OHpkaWY0dGswYTRpbWprMTZ6dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pyhASXLDkUAh7pewAn/giphy.gif";
+const SORCERER_GIF = 'https://media1.tenor.com/m/ItpUeyDZk14AAAAd/king-nanatsu-no-tazai.gif';
+const MONSTER_GIF = 'https://media1.tenor.com/m/LQRptFnFoEQAAAAd/nanatsu-no-taizai-4koa.gif';
 
 const charImgSrc = heroChoice === 'Knight' ? KNIGHT_GIF : SORCERER_GIF; 
 const monsterImgSrc = MONSTER_GIF; 
