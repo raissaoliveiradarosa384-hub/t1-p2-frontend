@@ -4,8 +4,8 @@ let log = new Log(document.querySelector(".log"));
 
 // allow user to choose hero type (Knight or Sorcerer)
 const heroChoice = (function(){
-const c = prompt('Escolha seu herói: Knight ou Sorcerer (digite exatamente Knight ou Sorcerer)', 'Sorcerer');
-if(c && c.toLowerCase().startsWith('k')) return 'Knight';
+const c = prompt('Escolha seu herói: Meliodas ou King (digite exatamente Meliodas ou King)', 'Sorcerer');
+if(c && c.toLowerCase().startsWith('M')) return 'Knight';
 return 'Sorcerer';
 })();
 
@@ -17,7 +17,8 @@ else char = new Sorcerer(charName);
 
 
 // create a monster (you can change to BigMonster if you want a harder fight)
-let monster = new LittleMonster();
+const monsters = [new LittleMonster(), new BigMonster()];
+let monster = monsters[Math.floor(Math.random() * monsters.length)]
 
 
 // --- Desafio Extra: Adicionar GIF dos personagens e monstros ---
@@ -26,9 +27,9 @@ const monsterEl = document.querySelector('#monster');
 
 // GIFs (Substituído imagens estáticas por GIFs)
 // Fonte dos GIFs: Gifs de domínio público ou comuns de jogos/pixel art
-const KNIGHT_GIF = "https://tse2.mm.bing.net/th/id/OIP.YSZBIyjtmEaXqRtJepzr6AHaE7?rs=1&pid=ImgDetMain&o=7&rm=3";
-const SORCERER_GIF = 'https://tse1.mm.bing.net/th/id/OIP.ecEWu6jq95S4l1Oa3MjMJAHaLm?rs=1&pid=ImgDetMain&o=7&rm=3';
-const MONSTER_GIF = 'https://minhaseriefavorita.com.br/wp-content/uploads/2022/12/hyde-wandinha.jpg';
+const KNIGHT_GIF = "https://media.tenor.com/LDXPUUlSSj0AAAAM/seven-deadly-sins-meliodas.gif";
+const SORCERER_GIF = 'https://tenor.com/pt-BR/view/seven-deadly-sins-king-fairy-king-gif-20428465';
+const MONSTER_GIF = 'https://tenor.com/pt-BR/view/arthur-pendragon-arthurpendragon-7ds-gif-15325690588768066197';
 
 const charImgSrc = heroChoice === 'Knight' ? KNIGHT_GIF : SORCERER_GIF; 
 const monsterImgSrc = MONSTER_GIF; 
